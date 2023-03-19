@@ -41,7 +41,7 @@ if st.button("Analyser"):
     sequence = Preprocess_Sentence(phrase)
     data = {'sequence': sequence}
     #response = requests.post("https://jglsr.pythonanywhere.com/prediction", json=data)
-    response = requests.post("http://127.0.0.1:5000/prediction", json=data)
+    response = requests.post("https://jglsr.pythonanywhere.com/prediction", json=data)
     # Traiter la réponse de l'API
     if response.status_code == 200:
         result = response.json()
