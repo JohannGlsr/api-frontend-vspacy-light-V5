@@ -9,3 +9,5 @@ enableCORS = false\n\
 base = 'light'\n\
 \n\
 " > ~/.streamlit/config.toml
+
+python -m spacy download en_core_web_sm
